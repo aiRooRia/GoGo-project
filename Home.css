@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font: normal 14px/22px Helvetica Neue, sans-serif, Arial;
 }
 /* TEXT */
 .text-size-13 {
@@ -23,6 +24,9 @@ body {
 }
 .text-size-19 {
   font-size: 19px;
+}
+.text-size-14 {
+  font-size: 14px;
 }
 .text-weight-700 {
   font-weight: 700;
@@ -48,6 +52,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.margin-top-40 {
+  margin-top: 40px;
+}
 /* COLOR */
 .color-green {
   color: green;
@@ -69,15 +76,25 @@ body {
   background-color: #212121;
 }
 .bg-aqua {
-  background-color: aqua;
+  background-image: url();
 }
 .bg-aquaM {
-  background-color: aquamarine;
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/10/312220-26102023-1698303692-1060392942-ariunsaikhan_OT1.jpg);
+  background-size: cover;
 }
 .bg-fd {
   background-color: #fdfaf5;
 }
-.bg {
+.bg-f8 {
+  background: #f8f8f8;
+  border: 1px solid #f2f2f2;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
 }
 .gg-label-blue {
   color: #fff;
@@ -108,6 +125,13 @@ body {
 }
 .columb-flex-start {
   align-items: flex-start;
+}
+.justify-flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+.display-flex {
+  display: none;
 }
 .gap-5 {
   gap: 5px;
@@ -140,10 +164,19 @@ body {
 .padding-left-20 {
   padding-left: 30px;
 }
+.padding-left-30-percent {
+  padding-left: 30%;
+}
+.padding-right-5-percent {
+  padding-right: 5%;
+}
 .padding-20 {
   padding: 20px;
 }
 /* WIDTH */
+.w-1200 {
+  width: 1200px;
+}
 .w-100-percent {
   width: 100%;
 }
@@ -507,10 +540,20 @@ body {
   height: 60%;
 }
 .main-container-03-grid-02 {
+  padding-bottom: 40px;
   background-color: #fdfaf5;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 50px repeat(11, 350px);
+  grid-template-rows: 50px repeat(11);
+  gap: 40px;
+}
+.shar-medee-too {
+  position: absolute;
+  right: 280px;
+  font-weight: 700;
+  color: #e00034;
+  font-size: 43px;
+  line-height: 46px;
 }
 .container-33 {
   grid-column: 1/2;
@@ -533,38 +576,77 @@ body {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 50px) 300px 300px;
+  grid-template-rows: repeat(1, 50px) 240px 240px;
   gap: 10px;
 }
 .container-14 {
   grid-column: 1/3;
   grid-row: 1/2;
-  background-color: aqua;
+  background-image: url();
+  font-weight: 800;
+  font-size: 30px;
 }
 .container-15 {
   grid-column: 1/3;
   grid-row: 2/4;
-  background-color: aquamarine;
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/np/2023/10/30/5204582/gutal-2-114624-5309337451.jpeg);
+  background-size: cover;
+}
+.position-main-container-04-big {
+  top: 330px;
+  left: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.position-main-container-04-mini {
+  top: 120px;
+  left: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.bg-gutal {
+  background-color: #407ce8;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-bottom: 5px;
 }
 .container-16 {
   grid-column: 3/4;
   grid-row: 2/3;
-  background-color: aquamarine;
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/10/311741-12102023-1697099714-1577351067-1.jpg);
+  background-size: cover;
 }
 .container-17 {
   grid-column: 4/5;
   grid-row: 2/3;
-  background-color: aquamarine;
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/10/312220-26102023-1698303692-1060392942-ariunsaikhan_OT1.jpg);
+  background-size: cover;
 }
 .container-18 {
   grid-column: 3/4;
   grid-row: 3/4;
-  background-color: aquamarine;
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/10/311560-13102023-1697170235-1782031612-111.jpg);
+  background-size: cover;
 }
 .container-19 {
   grid-column: 4/5;
   grid-row: 3/4;
-  background-color: aquamarine;
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/09/311161-26092023-1695722699-1744578070-gutal.jpg);
+  background-size: cover;
 }
 /* MAIN-CONTAINER-05 */
 .main-container-05 {
@@ -572,33 +654,88 @@ body {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 50px) 300px;
+  grid-template-rows: repeat(1, 50px) 400px;
   gap: 10px;
 }
 .container-20 {
   grid-column: 1/3;
   grid-row: 1/2;
-  background-color: aqua;
 }
 .container-21 {
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-21-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/11/312677-20112023-1700460589-1520179741-ibr.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
+}
+.container-21-content {
+  border-top: none;
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+  border: 1px solid #f1f1f1;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.justify-space-between {
+  justify-content: space-between;
 }
 .container-22 {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-22-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/11/313028-20112023-1700422041-343556142-%D1%85%D0%B8%D0%BB.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
 }
 .container-23 {
   grid-column: 3/4;
   grid-row: 2/3;
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-23-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/11/-13112023-1699845711-112398362-sprained-finger-113212-80060042.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
 }
 .container-24 {
   grid-column: 4/5;
   grid-row: 2/3;
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-24-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/11/312494-05112023-1699155802-2034816499-amgalan_lam_-2-092753-19862222381.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
 }
 /* MAIN-CONTAINER-06 */
 .main-container-06 {
@@ -612,27 +749,57 @@ body {
 .container-25 {
   grid-column: 1/3;
   grid-row: 1/2;
-  background-color: aqua;
+  background-image: url();
 }
 .container-26 {
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: aqua;
+}
+.container-26-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313108-21112023-1700557918-1120185145-justin.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
 }
 .container-27 {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: aqua;
+}
+.container-27-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/312845-13112023-1699860559-1298633604-eb293347-aa9b-432e-8ed9-bc26584bebfd.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
 }
 .container-28 {
   grid-column: 3/4;
   grid-row: 2/3;
-  background-color: aqua;
+  background-image: url();
+}
+.container-28-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/312788-10112023-1699611986-976158290-mic.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
 }
 .container-29 {
   grid-column: 4/5;
   grid-row: 2/3;
-  background-color: aqua;
+  background-image: url();
+}
+.container-29-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/312787-10112023-1699611822-494688187-facebook.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
 }
 /* MAIN-CONTAINER-07 */
 .main-container-07 {
@@ -640,35 +807,175 @@ body {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 50px) 300px;
+  grid-template-rows: repeat(1, 50px) 400px;
   gap: 10px;
 }
 .container-30 {
   grid-column: 1/3;
   grid-row: 1/2;
-  background-color: aqua;
 }
 .container-31 {
   grid-column: 1/3;
   grid-row: 2/3;
-  background-color: aqua;
+  background-image: url();
+}
+.container-31-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/comic/2023/06/21/3773/comic-153411-688093610.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
 }
 .container-32 {
   grid-column: 3/5;
   grid-row: 2/3;
-  background-color: aqua;
+  background-image: url();
 }
+.container-32-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/comic/2023/05/03/3772/hugjliin_bank-184555-1805228234.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
+}
+
 /* MAIN-CONTAINER-08 */
 .main-container-08 {
   margin-top: 40px;
   background-color: #1a1a1a;
   width: 100vw;
-  height: 600px;
+  padding: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 50px);
+  grid-template-rows: 50px repeat(2, 400px);
+  gap: 20px;
+}
+.container-34 {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
+.container-35-content {
+  background-color: none;
+  color: white;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container-35-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/np/2023/10/02/5203357/chuulgan%20baterdene-104606-21322888981.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
+}
+.container-35 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.container-36 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.container-36-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/312927-16112023-1700102126-66151280-oyunchimeg_zandanshatar1.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
+}
+.container-37 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.container-37-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/312847-13112023-1699862668-287175213-480.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
+}
+.container-38 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.container-38-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/12/301445-22122022-1671699264-195633526-zandanshatar1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
+}
+.container-39 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.container-39-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/10/312071-24102023-1698114185-856893038-20231022-DSC01583-21.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
+}
+.container-40 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.container-40-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/09/310321-03092023-1693728514-1201394183-371950847_1008725640333145_9000605254505432168_n1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
+}
+.container-41 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.container-41-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/09/310321-03092023-1693728514-1201394183-371950847_1008725640333145_9000605254505432168_n1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
+}
+.container-42 {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+.container-42-img {
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/10/312071-24102023-1698114185-856893038-20231022-DSC01583-21.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 60%;
+}
+
+/* FOOTER-01 */
+.footer-01 {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-02 {
+  width: 1200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 @media only screen and (max-width: 1250px) {
   .header {
     width: 100vw;
@@ -720,10 +1027,23 @@ body {
     padding-right: 1%;
     width: 100vw;
   }
+  .footer-01 {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 100vw;
+  }
+  .footer-02 {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 100vw;
+  }
 }
 @media only screen and (max-width: 936px) {
   body {
     width: 100vw;
+  }
+  .display-flex {
+    display: flex;
   }
   .main-container-01 {
     display: none;
@@ -773,8 +1093,28 @@ body {
     width: 100vw;
   }
   .main-container-04 {
+    margin-top: 0px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 50px) 300px 300px;
+    grid-template-rows: repeat(1, 0px) 300px 300px;
+  }
+  .main-container-04-big-mobile {
+    color: white;
+    top: 270px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .main-container-04-mobile {
+    width: 60%;
+    height: 400px;
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/np/2023/10/30/5204582/gutal-2-114624-5309337451.jpeg);
+    background-size: cover;
+  }
+  .position-main-container-04-mini {
+    top: 200px;
+    left: 20px;
   }
   .container-14 {
     grid-column: 1/3;
@@ -798,6 +1138,70 @@ body {
   .container-19 {
     grid-column: 3/5;
     grid-row: 3/5;
-    background-color: aquamarine;
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/10/312220-26102023-1698303692-1060392942-ariunsaikhan_OT1.jpg);
+    background-size: cover;
+  }
+  .main-container-05 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 50px) 400px;
+  }
+  .container-24 {
+    display: none;
+  }
+  .main-container-06 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 50px) 400px;
+  }
+  .container-29 {
+    display: none;
+  }
+  .main-container-07 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 50px) 400px;
+  }
+  .container-32 {
+    display: none;
+  }
+  .main-container-08 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px repeat(8, 400px);
+  }
+  .container-34 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .container-35 {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+  .container-36 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+  .container-37 {
+    grid-column: 1/4;
+    grid-row: 4/5;
+  }
+  .container-38 {
+    grid-column: 1/4;
+    grid-row: 5/6;
+  }
+  .container-39 {
+    grid-column: 1/4;
+    grid-row: 6/7;
+  }
+  .container-40 {
+    grid-column: 1/4;
+    grid-row: 7/8;
+  }
+  .container-41 {
+    grid-column: 1/4;
+    grid-row: 8/9;
+  }
+  .container-42 {
+    grid-column: 1/4;
+    grid-row: 9/10;
   }
 }
